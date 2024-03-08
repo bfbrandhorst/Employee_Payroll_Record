@@ -27,27 +27,13 @@ const collectEmployees = function () {
     if (isNaN(employee.salary)) {
       employee.salary = 0
     }
-
     console.log(employee)
+
     employees.push(employee)
     console.log(employees)
 
     nextEmployee = window.confirm("Create next employee?")
-    // // If user pressed Cancel, immediately end function
-    // if (!userChoice) {
-    //   return;
-    // }
 
-    // // Convert to uppercase to make comparisons easier
-    // userChoice = userChoice.toUpperCase();
-
-    // //Confirm that user made a valid choice
-    // if (!options.includes(userChoice)) {
-    //   window.alert("Please enter a valid choice.")
-    // }
-    // else {
-
-    // }
   }
   return employees
 }
@@ -55,11 +41,25 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary-use a template literal string
+  let sum = 0;
+  let count = 0;
+
+  for (let i = 0; i < employeesArray.length; i++) {
+    let input = parseInt(employeesArray[i].salary);
+    sum += input;
+    count++;
+  }
+  let average = sum / count;
+
+  console.log(`The average salary between our employees is: ${average}`);
 }
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee -the built in Math.random
+  const randomIndex = Math.floor(Math.random() * employeesArray.length);
+  const randomElement = employeesArray[randomIndex];
+  console.log(`Congratulations to ${randomElement} our random drawing winner!`)
 }
 
 /*
