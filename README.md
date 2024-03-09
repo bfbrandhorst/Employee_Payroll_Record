@@ -4,6 +4,6 @@ Employee_Payroll_Record is a tool designed to make your work more efficent and c
 
 Github Repository Link: https://github.com/bfbrandhorst/Employee_Payroll_Record
 
-Deployed Site Link: 
+Deployed Site Link: https://bfbrandhorst.github.io/Employee_Payroll_Record/
 
-Preview Image of Employee_Payroll_Record
+[Preview Image of Employee_Payroll_Record](./assets/css/images/Live%20WebpageImage.png)
